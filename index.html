@@ -85,6 +85,15 @@
   right: 0;
  }
 /*  */
+@media (max-width: 500px){
+#type-name{
+  display: none;
+}
+#my-name{
+  display: block!important;
+
+}
+}
 
 </style>
 
@@ -119,11 +128,14 @@
             <div class="container">
               <div class="content-center">
                 <div data-aos="zoom-in" class="cc-profile-image"><a><img src="images/pic.png" alt="Profile Image"/></a></div>
-                <div class="h1 title">
-			<a href="" class="typewrite" data-period="2000" data-type='[ "Anoop Varghese", "I Code and Learn." ]'>
-                    		<span class="wrap"></span>
-                  	</a>
-		      </div>
+                <div id="type-name" class="h1 title">
+                  <a href="" class="typewrite" data-period="2000" data-type='[ "Anoop Varghese", "I Code and Learn." ]'>
+                    <span class="wrap"></span>
+                  </a>
+                </div>
+                <div id="my-name" class="h1 title" style="display: none;">
+                 Anoop Varghese
+                </div>
                 <p class="category text-white">Persuing Computer Science Engineering from Karunya Institute of Technology and Sciences, Coimbatore.</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="https://drive.google.com/file/d/1yux8B39DDENnTLBmknn0n2dSevN7gjpd/view?usp=sharing" target="_blank" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">My Resume</a>
               </div>
             </div>
@@ -591,7 +603,7 @@
     <script src="js/now-ui-kit.js?v=1.1.0"></script>
     <script src="js/aos.js"></script>
     <script src="scripts/main.js"></script>
-    
+
     <script>
       var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -649,6 +661,8 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; color: #fff;}";
     document.body.appendChild(css);
 };
-  </script>	
+  </script>
+
+
   </body>
   </html>
